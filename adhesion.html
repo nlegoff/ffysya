@@ -11,6 +11,20 @@
     <!-- Le styles -->
     <link href="assets/bootstrap/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="assets/bootstrap/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <script type="text/javascript" src="./assets/jquery/jquery.js" ></script>
+    <script type="text/javascript" src="./assets/bootstrap/bootstrap/js/bootstrap.js" ></script>
+    <script type="text/javascript" src="./assets//masonry/masonry.js" ></script>
+
+    <script type="text/javascript">
+            var $tumblelog = $('#tumblelog');
+
+            $tumblelog.imagesLoaded( function(){
+              $tumblelog.masonry({
+                columnWidth: 240
+              });
+            });
+    </script>
     <style>
 
     /* GLOBAL STYLES
@@ -22,18 +36,94 @@
       color: #5a5a5a;
     }
 
+    p {
+        font-size: 18px;
+        font-weight: 200;
+        line-height: 30px;
+        color: inherit;
+        padding: 10px;
+    }
+
     .page-header h1 {
         color: inherit;
+        font-weight: 200;
     }
 
-    .hero-unit {
-        background-color:#0C1C8C;
-        color: #fff;
+    h4 {
+        font-weight: normal;
+        font-size: 32px;
+        font-weight: 300;
+        line-height: 1;
+        letter-spacing: -1px;
+        margin: 15px 0;
+        padding: 10px;
     }
 
-    .hero-unit h1 {
-        color: #fff;
+    img, iframe {
+        box-shadow: 1px 1px 12px #555;
     }
+
+    #tumblelog .story {
+        margin: 5px;
+        padding: 5px;
+        font-size: 11px;
+        line-height: 1.4em;
+        float: left;
+    }
+
+    .col3 {
+        width: 260px;
+    }
+
+    .col6 {
+        width: 520px;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
 
     </style>
 
@@ -64,12 +154,12 @@
                 <li><a href="index.html">Accueil</a></li>
 
                 <li><a href="championships.html">Championnats</a></li>
-                <li class="active"><a href="formations.html">Formations</a></li>
+
                 <li><a href="histoire.html">Histoire</a></li>
 
                 <li><a href="reglement.html">Réglement</a></li>
                 <li><a href="media.html">Medias</a></li>
-                <li><a href="adhesion.html">Adhésion</a></li>
+                <li class="active"><a href="adhesion.html">Adhésion</a></li>
             </div><!--/.nav-collapse -->
           </div><!-- /.navbar-inner -->
         </div><!-- /.navbar -->
@@ -77,21 +167,9 @@
       </div> <!-- /.container -->
     </div><!-- /.navbar-wrapper -->
 
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-        <div class="hero-unit">
-            <h1>Rencontre, stage internationnaux</h1>
-        </div>
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2013 FFYSYA &middot;  <a href="siege.html">Siège</a>  &middot; <a href="./partners.html">Partenaires</a></p>
-      </footer>
-
+   <div class="container clearfix" style="margin-top: 100px">
+       <div class="row">
+       </div>
     </div><!-- /.container -->
 
 
