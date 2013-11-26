@@ -5,3 +5,4 @@
  - ajout de analytics
  - Modification texte homepage
  - Mise a jour section media
+ - Ajout d'image a la section championnat
