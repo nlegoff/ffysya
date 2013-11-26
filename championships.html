@@ -1,0 +1,446 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Fédération Française de Yoga Sportive et Yoga Artistique</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="./assets/bootstrap/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="./assets/bootstrap/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/calendar/css/bootstrap.calendar.css" type="text/css" />
+    <script type="text/javascript" src="./assets/jquery/jquery.js" ></script>
+    <script type="text/javascript" src="./assets/bootstrap/bootstrap/js/bootstrap.js" ></script>
+    <script type="text/javascript" src="./assets/calendar/bootstrap.calendar.js" ></script>
+
+
+    <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+
+    .page-header h1 {
+        color: inherit;
+    }
+
+    .hero-unit {
+        background-color:#0C1C8C;
+        color: #fff;
+    }
+
+    .hero-unit h1 {
+        color: #fff;
+    }
+
+    .divider {
+      margin: 30px 0; /* Space out the Bootstrap <hr> more */
+    }
+
+    .date {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .popover.right .arrow {
+        margin-top: -21px;
+    }
+    
+        /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 200;
+        line-height: 30px;
+        color: inherit;
+        padding: 10px;
+    }
+
+    h1 {
+        font-weight: normal;
+        font-size: 50px;
+        font-weight: 300;
+        line-height: 1;
+        letter-spacing: -1px;
+    }
+
+    h4 {
+        font-weight: normal;
+        font-size: 32px;
+        font-weight: 300;
+        line-height: 1;
+        letter-spacing: -1px;
+        margin: 15px 0;
+        padding: 10px;
+    }
+
+    </style>
+
+   <!-- <script type="text/javascript">
+        $(document).ready(function(){
+
+          var evnts = function(){
+              return {
+                      "event":
+                          [
+                               {"date":"01/26/2013","title":"Championnat de France de yoga"}
+                              ,{"date":"03/30/2013","title":"Championnat de France de yoga"}
+                              ,{"date":"03/31/2013","title":"Championnat de France de yoga"}
+                          ]
+                      }
+          };
+
+         $('#calendar').Calendar({ 'events': evnts, 'weekStart': 1 });
+      });
+
+    </script>-->
+  </head>
+
+  <body>
+
+
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="index.html">F.F.Y.S.Y.A</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li><a href="index.html">Accueil</a></li>
+                
+                <li class="active"><a href="championships.html">Championnats</a></li>
+                
+                <li><a href="histoire.html">Histoire</a></li>
+                
+                <li><a href="reglement.html">Réglement</a></li>
+                <li><a href="media.html">Medias</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing" style="margin-top:100px;">
+        <div class="row">
+            <div class="span12">
+                <div class="hero-unit">
+                    <h1>Actualités</h1>
+                    <p>Les prochains rendez-vous</p>
+                </div>
+            </div>
+            <!--<div class="span4"><div id="calendar" class="pull-right"></div></div>-->
+        </div>
+
+        <div class="row">
+            <div class="span4">
+                <img src="./img/poster/affiche-champ-2013.jpg"/>
+            </div>
+            <div class="span8">
+                <div>
+                    <span class="badge badge-info date">13 octobre 2013</span>
+                </div>
+                <h1>Championnat professionnel européen adulte Paris 2013 (France)</h1>
+                <h3>Les champions</h3>
+                <p>
+                    <b>YOGA  ATHLETIQUE</b><br />
+                    Homme: Giorgi Berdzenishvili - (Georgie)<br/>
+                    Femme: Morgane Le Goff - (France)
+                </p>
+                <p>
+                    <b>YOGA ASANAS</b><br />
+                    Homme: Giorgi Berdzennishvili - (Georgie)<br/>
+                    Femme: Morgane Le Goff - (France)
+                </p>
+                <p>
+                    <b>YOGA DANCE</b><br />
+                    Homme: Daniel Petrov - (Bulgarie)<br />
+                    Femme: Pauline Geslin - (France)
+                </p>
+                <p>
+                    <b>YOGA DANCE PAIRE</b><br />
+                    1. Justine Berteau - Isabelle Didry - (France)<br />
+                    2. Pauline Geslin- Morgane Le Goff - (France)
+                </p>
+                <p>
+                    <b>YOGA ARTISTIQUE</b><br />
+                    Homme: Daniel PETROV (Bulgarie)<br/>
+                    Femme: Pauline Geslin (France)
+                </p>
+                <p>
+                    <b>YOGA ARTISTIQUE (DUO)</b><br />
+                    Morgane Le Goff - Pauline Geslin -(France)
+                </p>
+                <p>
+                    <b>YOGA RHYTHMIQUE</b><br />
+                    Pauline Geslin- Morgane Le goff - (France)
+                </p>
+                <p>
+                    <b>ACRO YOGA</b><br />
+                    Justine Berteau-Pauline Geslin - (France)
+                </p>
+                <div>
+                    <div class="pull-right"><span class="label">yoga sportif</span> <span class="label">yoga artistique</span></div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="divider"/>
+
+        <div class="row">
+            <div class="span4">
+                <img src="./img/poster/affiche-champ-2013.jpg"/>
+            </div>
+            <div class="span8">
+                <div>
+                    <span class="badge badge-info date">13 octobre 2013</span>
+                </div>
+                <h1>Championnat amateur européen adulte Paris 2013 (France)</h1>
+                <h3>Les champions</h3>
+                <p>
+                    <b>YOGA  ATHLETIQUE</b><br />
+                    Homme: Ivan Vlason (Bulgarie)<br/>
+                    Femme: Tania Tsekova (Bulgarie)
+                </p>
+                <p>
+                    <b>YOGA ASANAS</b><br />
+                    Homme: Ivan Vlason (Bulgarie)<br/>
+                    Femme: Tanya Tsekova (Bulgarie)
+                </p>
+                <p>
+                    <b>YOGA DANCE</b><br />
+                    Femme: Tanya Tsekova (Bulgarie)
+                </p>
+                <p>
+                    <b>YOGA ARTISTIQUE</b><br />
+                    Homme: Mikhalev Aleksandr (Russie)<br/>
+                    Femme: Prudence Hauguel (France)
+                </p>
+                <p>
+                    <b>YOGA ARTISTIQUE (DUO)</b><br />
+                    Prudence Hauguel - Grace Louis - (France)
+                </p>
+                <p>
+                    <b>YOGA RHYTHMIQUE</b><br />
+                    Prudence Hauguel - Grace Louis - (France)
+                </p>
+                <p>
+                    <b>ACRO YOGA</b><br />
+                    Mikhalev Aleksandr - Faina Smolianskia - (Russie)
+                </p>
+                <p>
+                    <b>YOGA ARTISTIQUE GROUPES</b><br />
+                    Mikhalev Aleksandr - Smolianskaia Faina - Goorshkova Nadezhda - Babenko Ida - Pozdeeva Vera - Egorova Elena - Sergeeva Liidia - (RUSSIE)
+                </p>
+                <div>
+                    <div class="pull-right"><span class="label">yoga sportif</span> <span class="label">yoga artistique</span></div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="divider"/>
+
+        <div class="row">
+            <div class="span4">
+                <img src="./img/poster/affiche-champ-2013.jpg"/>
+            </div>
+            <div class="span8">
+                <div>
+                    <span class="badge badge-info date">13 octobre 2013</span>
+                </div>
+                <h1>Coupe mondiale de yoga sportif et artistique 2013 Paris (France)</h1>
+                <p>
+                    Coupes amateur Pierre de Coubertin<br />
+
+                    Coupe du Monde de Yoga athlétique amateur<br />
+
+                    Coupe du Monde de Yoga artistique amateur<br />
+
+                    Coupe du Monde de Yoga rythmique amateur<br />
+
+                    Coupe du Monde de Acro Yoga indien amateur<br />
+
+                    Coupe du Monde de Yoga Asanas (Hatha Yoga) amateur<br />
+
+                    Coupe du Monde de Yoga Danse amateur<br />
+
+                    -------------------------------------------<br />
+
+                    Coupes professionnel Swami Asuri Kapila<br />
+
+                    Coupe du Monde de Yoga athlétique professionnel<br />
+
+                    Coupe du Monde de Yoga artistique professionnel<br />
+
+                    Coupe du Monde de Yoga rythmique professionnel<br />
+
+                    Coupe du Monde de Acro Yoga indien professionnel<br />
+
+                    Coupe du Monde de Yoga Asanas (Hatha Yoga) professionnel<br />
+
+                    Coupe du Monde de Yoga Danse professionnel<br />
+                </p>
+                <address>
+                    <a href="http://www.centre-rick-odums.com/"><strong>Centre Rick Odums</strong></a><br>
+                    54 Rue de Clichy<br>
+                    75009 Paris<br>
+                    <a href="http://goo.gl/maps/C4UQt">Plan d'accés</a>
+                </address>
+                <div>
+                    <div class="pull-right"><span class="label">yoga sportif</span> <span class="label">yoga artistique</span></div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="divider"/>
+        
+        <div class="row">
+            <div class="span4">
+                <img src="./img/championship/champ-amateur-2013-03-30.png"/>
+            </div>
+            <div class="span8">
+                <div>
+                    <span class="badge badge-info date">30 & 31 mars 2013</span>
+                </div>
+                <h1>Championnat de France amateur de yoga artistique & sportif</h1>
+                <p>
+                </p>
+                <address>
+                    <strong>Salle des Miroirs de l'Âme</strong><br>
+                    18 rue Duhesme<br>
+                    75018 Paris<br>
+                </address>
+                <div>
+                    <div class="pull-right"><span class="label">yoga sportif</span> <span class="label">yoga artistique</span></div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="divider"/>
+
+        <div class="row">
+            <div class="span4">
+                <img src="./img/championship/champ-amateur-2013-01-26.png"/>
+            </div>
+            <div class="span8">
+                <div>
+                    <span class="badge badge-info date">26 janvier 2013</span>
+                </div>
+                <h1>Championnat de France amateur de yoga artistique & sportif</h1>
+                <p>
+                </p>
+                <address>
+                    <strong>Salle des Miroirs de l'Âme</strong><br>
+                    18 rue Duhesme<br>
+                    75018 Paris<br>
+                </address>
+                <div>
+                    <div class="pull-right"><span class="label">yoga sportif</span> <span class="label">yoga artistique</span></div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="divider"/>
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2013 FFYSYA &middot;  <a href="siege.html">Siège</a>  &middot; <a href="./partners.html">Partenaires</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/bootstrap/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+    </script>
+  </body>
+</html>
